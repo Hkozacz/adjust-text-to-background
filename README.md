@@ -17,4 +17,3 @@ Set the div or other for the script with using the ```adjust-text ``` class
 </div>
 ```
 and that's all. Script will find your determined tags, and will adjust text color :)
-![Example gif](example.gif)
