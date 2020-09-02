@@ -1,6 +1,6 @@
 # Adjust-Text-To-Background.js
 
-It's a jQuery plugin for adjusting text color to your background color. If the background color is brighter script will change text color to black, if the background is less brighter it will be changed for white.
+It's a jQuery plugin for adjusting text color to your background color. If the background color is brighter script will change text color to black, if the background is darker it will be changed for white.
 ## Installation
 
 Add jQuery to your html, and then add the plugin file
