@@ -10,10 +10,29 @@ Add jQuery to your html, and then add the plugin file
 ```
 
 ## Usage
-Set the div or other for the script with using the ```adjust-text ``` class
+Give your div or other element a class or id
 ```html
 <div class="adjust-text" style="background: red; text-align: center;">
     <h1>Example text</h1>
 </div>
 ```
-and that's all. Script will find your determined tags, and will adjust text color :)
+Then create script after the plugin files and point to choosen element/elements by
+id or class like in example:
+```html
+<script>
+    $('.adjust-text').adjustTextToBackground({
+            lightness: 0.6
+        });
+</script>
+```
+The only option `adjustTextToBackground` takes is lightness.
+The value of that const determinates from which value the text will be adjusting.
+The formula is:
+```text
+If Background lightness is greater or equal option lightness text will be black
+otherwise text will be white
+```
+for example `lightness: 0.6`
+```javascript
+if background lightness >= 0.6 then text will be white else text will be black
+```
