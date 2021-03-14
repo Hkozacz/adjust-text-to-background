@@ -8,6 +8,11 @@ Add jQuery to your html, and then add the plugin file
 ```bash
 <script src="adjust-text-to-background.js"></script>
 ```
+or use minified version
+
+```bash
+<script src="adjust-text-to-background.min.js"></script>
+```
 
 ## Usage
 Give your div or other element a class or id
