@@ -1,8 +1,11 @@
 $(document).ready(function(){
-    $(".adjust-text").each((e) =>{
+    $(".adjust-text").each((index, element) =>{
         //extract R G and B from element background color
-        let backgroundColor = $(e.currentTarget).css("background-color");
-        backgroundColor =  backgroundColor.replace('rgb(', '').replace(')', '').split(',')
+        const backgroundColor = $(element)
+            .css("background-color")
+            .replace('rgb(', '')
+            .replace(')', '')
+            .split(',')
         const [R,G,B] = backgroundColor
         //Convert RGB to HSL
 
@@ -24,6 +27,6 @@ $(document).ready(function(){
         If it is >50% we are goin to change text color to black
         otherwise, we gonna set text color to white.
         */
-        lightness >= 0.60 ? $(e.currentTarget).css("color", "black") : $(e.currentTarget).css("color", "white");
+        lightness >= 0.60 ?$(element).css("color", "black") : $(element).css("color", "white");
     })
 })
