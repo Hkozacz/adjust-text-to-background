@@ -24,6 +24,6 @@ $(document).ready(function(){
         If it is >50% we are goin to change text color to black
         otherwise, we gonna set text color to white.
         */
-        lightness >= 0.60 ? $(this).css("color", "black") : $(this).css("color", "white");
+        lightness >= 0.60 ? $(e.currentTarget).css("color", "black") : $(e.currentTarget).css("color", "white");
     })
 })
